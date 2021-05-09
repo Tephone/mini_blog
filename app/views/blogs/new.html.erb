@@ -1,9 +1,0 @@
-<h1>Blogs#new</h1>
-<p>Find me in app/views/blogs/new.html.erb</p>
-<%= form_with(model: @blog, local: true, url: blogs_path) do |b| %>
-  <%= b.label :投稿内容 %><br>
-  <%= b.text_area :content %><br>
-  <%= b.submit :投稿する%>
-<% end %>
-<%= link_to "戻る", blogs_path %>
-
